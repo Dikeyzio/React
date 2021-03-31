@@ -1,0 +1,130 @@
+@font-face {
+    font-family: 'icomoon';
+    src:  url('fonts/icomoon.eot?mk18hf');
+    src:  url('fonts/icomoon.eot?mk18hf#iefix') format('embedded-opentype'),
+      url('fonts/icomoon.ttf?mk18hf') format('truetype'),
+      url('fonts/icomoon.woff?mk18hf') format('woff'),
+      url('fonts/icomoon.svg?mk18hf#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+  }
+  
+  [class^="icon-"], [class*=" icon-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'icomoon' !important;
+    speak: never;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+  
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+  .icon-cancel:before {
+    content: "\e900";
+  }
+
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.holder {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+        input {
+            width: 300px; 
+            margin-top: 20px;
+            border-color: aqua;
+            border: 1px solid #cccccc; 
+            border-radius: 3px;
+            background: #ffffff !important;
+            outline: none; 
+            height: 24px; 
+            color: black;
+            font-size: 16px; 
+            font-family: Tahoma;
+        }
+        button {
+            background-color:green;
+            border: none;
+            color: white;
+            padding: 16px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            transition-duration: 0.4s;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #4CAF50; 
+            color: black; 
+            border: 2px solid #4CAF50;
+        }
+}
+
+.wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin-top: 100px;
+    div {
+        width: 170px;
+        position: relative;
+        border: 1px solid blueviolet;
+        margin-right: 40px;
+        font-size: 24px;
+        .del {
+            position: absolute;
+            right: -4px;
+            top: -4px;
+            width: 32px;
+            height: 32px;
+            opacity: 0.3;
+            cursor:pointer;
+            }
+            .del:hover {
+            opacity: 1;
+            }
+            .del:before, .del:after {
+            position: absolute;
+            left: 15px;
+            content: ' ';
+            height: 33px;
+            width: 2px;
+            background-color: #333;
+            }
+            .del:before {
+            transform: rotate(45deg);
+            }
+            .del:after {
+            transform: rotate(-45deg);
+            }
+
+          
+
+    }
+    
+
+}
+
+.hide {
+  display: none;
+}
+
+
+
+
+
+
